@@ -1,0 +1,1 @@
+First MeteorJS application utilizing Github as a login service. You’re name should show up next to your message if you login with Github. If not, you will be ‘Anonymous’

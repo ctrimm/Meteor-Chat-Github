@@ -1,0 +1,29 @@
+<head>
+	<title>Chat App</title>
+</head>
+
+<body>
+	{{loginButtons align="right"}}<br>
+	<h1>Chatapp</h1>
+	{{> welcome}}
+	{{> input}}
+	{{> messages}}
+</body>
+
+<template name="welcome">
+	<p>
+		Welcome to the example chat app. Please log in to show your username
+	</p>
+</template>
+
+<template name="messages">
+  {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+  {{/each}}
+</template>
+
+<template name="input">
+	<div class="input">
+		<p>Message: <input type="text" id="message"></p>
+	</div>
+</template>
